@@ -11,6 +11,7 @@ init()
 atexit.register(cursor.show)
 
 cursor.hide()
+scene = ["game"]
 startTime = 0
 currentTime = 0
 judge = None
