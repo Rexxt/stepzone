@@ -65,22 +65,22 @@ while True:
                     combo += 1
                     counts[judge] += 1
                     noteIndices[ln] = min(noteIndices[ln] + 1, len(lanes[ln]))
-                if abstime <= 45:
+                elif abstime <= 45:
                     judge = 1
                     combo += 1
                     counts[judge] += 1
                     noteIndices[ln] += min(noteIndices[ln] + 1, len(lanes[ln]))
-                if abstime <= 90:
+                elif abstime <= 90:
                     judge = 2
                     combo += 1
                     counts[judge] += 1
                     noteIndices[ln] += min(noteIndices[ln] + 1, len(lanes[ln]))
-                if abstime <= 135:
+                elif abstime <= 135:
                     judge = 3
                     combo = 0
                     counts[judge] += 1
                     noteIndices[ln] += min(noteIndices[ln] + 1, len(lanes[ln]))
-                if abstime <= 180:
+                else:
                     judge = 4
                     combo = 0
                     counts[judge] += 1
