@@ -91,5 +91,5 @@ while True:
                     combo = 0
                     counts[judge] += 1
                     noteIndices[ln] += min(noteIndices[ln] + 1, len(lanes[ln]))
-    print(MSPB)
+            print(abstime)
 exit()
