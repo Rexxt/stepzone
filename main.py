@@ -3,14 +3,19 @@ import keyboard
 import sys
 import os
 import time
+import cursor
+import atexit
 from colorama import init
 init()
 
+atexit.register(cursor.show)
+
+cursor.hide()
 startTime = 0
 currentTime = 0
 judge = None
 tick = 0
-BPM = 120
+BPM = 15
 MPB = 1/BPM
 MSPB = MPB*60*1000
 judgenames = ["PERFECT", "GREAT", "GOOD", "BAD", "POOR"]
@@ -85,4 +90,5 @@ while True:
                     combo = 0
                     counts[judge] += 1
                     noteIndices[ln] += min(noteIndices[ln] + 1, len(lanes[ln]))
-    #print(keyTicks)
+    print(MSPB)
+exit()

@@ -6,6 +6,7 @@ StepZone is a rhythm game written in Python 3.9 that runs entirely in your termi
 ## Libraries required
 * colorama
 * keyboard
+* cursor
 
 ## Running the game
 ### From source
